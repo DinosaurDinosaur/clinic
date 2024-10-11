@@ -101,7 +101,10 @@
             border-radius: 20px;
             padding: 10px;
             font-size: 20px;
-         }
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-left: 6px;
+        }
+         
          .btns {
            width: 400px;
            height: 100px;
@@ -129,9 +132,19 @@
             border: 4px solid #c29f04;
             margin-left: 25px;
             border-radius: 20px;
+            display: flex;
+            justify-content: center;
+        
+         }
+         .content-box {
+            padding: 25px;
+            
          }
          .add-btn {
             background-color: #07dcf8 !important;
+         }
+         .content-box .name,.birthday, .phone, .address, .email, .blood {
+            padding-bottom: 6px;
          }
     </style>
 </head>
@@ -157,13 +170,15 @@
           </div>
         </div>
           <div class="content">
-            <div class="name">姓名<input /></div>
-            <div class="birthday">出生年月日<input /></div>
-            <div class="phone">手機號碼<input /></div>
-            <div class="address">居住地址<input /></div>
-            <div class="email">email<input /></div>
-            <div class="blood">血型<input /></div>
-            <div class="no">對哪種藥物過敏<input /></div>
+                  <div class="content-box">
+                    <div class="name">姓名<input /></div>
+                    <div class="birthday">生日<input /></div>
+                    <div class="phone">手機<input /></div>
+                    <div class="address">地址<input /></div>
+                    <div class="email">email<input /></div>
+                    <div class="blood">血型<input /></div>
+                    <div class="no">備註<input /></div>
+                  </div>  
           </div>
     </section>
 </body>

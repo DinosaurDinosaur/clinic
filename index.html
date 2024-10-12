@@ -43,7 +43,7 @@
             padding: 15px;
             width: 500px;
             height: 500px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: flex;
             justify-content: center;
             text-align: center;
@@ -91,7 +91,7 @@
             font-size: 25px;
             border: 6px solid #07dcf8;
             border-radius: 20px;
-            width: 450px;
+            width: 300px;
             height: 450px;
 
          }
@@ -104,6 +104,50 @@
          .up h2, .down h2 {
             color: brown;
          }
+          input {
+            all: unset;
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 20px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-left: 6px;
+        }
+            select {
+                /* 清除預設樣式 */
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                 appearance: none;
+                 border: none; /* 移除邊框 */
+               
+                
+                /* 自定義樣式 */
+                background-color: #fff;
+               
+                /* border: 1px solid #ccc; */
+                border-radius: 4px;
+                padding: 5px 10px;
+                font-size: 20px;
+                background-image: url("https://picsum.photos/20/10?random=2");
+                /* background-size: 0.1% 0.1%; */
+                background-repeat: no-repeat;
+                background-position: right bottom
+                
+
+            }
+            .teeth-selection {
+                margin-left: 20px;
+            }
+            .teeth-position {
+                margin-top: 90px;
+                margin-left: 10px;
+            }
+            label {
+                font-size: 20px;
+            }
+            .demo-a {
+                color: blue !important;
+            }
     </style>
 </head>
 <body>
@@ -112,7 +156,7 @@
        
             <ul> 
                 <li class="first-child">方程式醫師，您好<button>登出</button></li>
-                <li><a href="#">病患個資</a></li>
+                <li><a class="demo-a" href="./toSearchAndToBuild.html">病患個資</a></li>
                 <li><a href="#">就診紀錄</a></li>
                 <li><a href="#">預約日期</a></li>
                 <li><a class="for-teeth" href="#">牙齒狀況</a></li>
@@ -126,7 +170,7 @@
         <!-- 示範小圖 暫時關掉 -->
        <!-- <div class="img-1"> <img src="https://picsum.photos/30/30?random=2"> </div> -->
             <div class="teeth-img">
-                  <img src="./image/435309.png" />
+                  <img src="./image/435309000.png" />
                   
                 
             </div> 
@@ -146,8 +190,27 @@
                     <p>蛀牙有兩顆</p>
                     <p>牙套有兩顆</p>
                     <p>斷牙有一顆</p>
-                   </div> 
+                   </div>
+                
               </div>
+              <div class="container">
+                    <div class="teeth-selection">
+                            <label for="mySelect">請選擇患牙種類：</label>
+                            <select id="mySelect" name="mySelect">
+                            <option value="aTeeth">蛀牙</option>
+                            <option value="bTeeth">斷牙</option>
+                            <option value="cTeeth">有牙套</option>
+                            </select>
+                    </div>
+                    <div class="teeth-position">
+                        <label for="mySelect">請選擇患牙位置：</label>
+                        <select id="mySelect" name="mySelect">
+                        <option value="value1">上顎左01</option>
+                        <option value="value2">上顎左02</option>
+                        <option value="value3">上顎左03</option>
+                        </select>
+                    </div>
+            </div> 
     </section>
 </body>
 </html>
